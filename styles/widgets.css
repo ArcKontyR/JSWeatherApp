@@ -1,0 +1,92 @@
+.widgets {
+    margin: 40px 0px 20px;
+    color: white;
+}
+
+.widgets_list {
+    display: grid;
+    grid-gap: 35px 50px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.widgets_widget {
+    min-width: 280px;
+    position: relative;
+    padding: 10px;
+    border: solid 5px white;
+    border-radius: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.widgets_coordinates {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(1, 255, 255, 0.575);
+    padding: 8px 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.widgets_weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widgets_icon {
+    width: 50px; 
+    height: 50px; 
+}
+
+.widgets_description {
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.widgets_wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.widgets_temperature {
+    display: flex;
+    align-self: center;
+    font-size: 96px;
+    font-weight: 400;
+}
+
+.widgets_name {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.widgets_value {
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.widgets_map-wrapper {
+    min-height: 240px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.widgets_map {
+    max-width: 320px;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+    transition: transform 0.8s;
+}
+
+.widgets_map:hover {
+    opacity: 75%;
+    transform: scale(1.1);
+}
